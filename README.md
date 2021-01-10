@@ -2,7 +2,7 @@ Init read me
 
 
 Java Code,file name:StackStruTest.java
-
+````
 public class StackStruTest {
     public static void main(String[] args) {
         int i=2;
@@ -12,7 +12,9 @@ public class StackStruTest {
 }
 
 javac StackStruTest.java
+````
 
+````
 
 ❯ ls
 StackStruTest.class StackStruTest.java
@@ -77,3 +79,4 @@ Constant pool:
         line 6: 8
 }
 SourceFile: "StackStruTest.java"
+````
