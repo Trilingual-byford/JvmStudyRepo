@@ -81,3 +81,4 @@ SourceFile: "StackStruTest.java"
  - JRockit 专注于服务端，特别适用于延迟敏感性应用。
  - IBM J9
  - hotSpot 编译执行和解释执行中取得平衡
+### ClassLoading:Verify(文件格式验证，元数据验证，字节码验证，符号引用验证etc..)->prepare->Resolve
