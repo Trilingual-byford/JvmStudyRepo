@@ -1,6 +1,3 @@
-Init read me
-
-
 Java Code,file name:StackStruTest.java
 ````
 public class StackStruTest {
@@ -80,3 +77,7 @@ Constant pool:
 }
 SourceFile: "StackStruTest.java"
 ````
+### JVM：商用
+ - JRockit 专注于服务端，特别适用于延迟敏感性应用。
+ - IBM J9
+ - hotSpot 编译执行和解释执行中取得平衡
