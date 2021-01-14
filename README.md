@@ -82,3 +82,12 @@ SourceFile: "StackStruTest.java"
  - IBM J9
  - hotSpot 编译执行和解释执行中取得平衡
 ### ClassLoading:Verify(文件格式验证，元数据验证，字节码验证，符号引用验证etc..)->prepare->Resolve
+
+### 虚拟机自带的加载器
+ - BootStrap classLoader 使用C/C++编写 程序启动时 无法获取对象  用来加载Java的核心库 String int etc..
+ - Extension ClassLoader 扩展类加载器
+ - App ClassLoader 加载用户编写的类的加载器
+ 
+
+      stack=2, locals=4, args_size=1C/
+      stack=2, locals=4, args_size=1
