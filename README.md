@@ -1,3 +1,5 @@
+Best video tutorial(Chinese):https://www.bilibili.com/video/BV1yE411Z7AP?p=12
+
 Java Code,file name:StackStruTest.java
 ````
 public class StackStruTest {
