@@ -98,3 +98,5 @@ SourceFile: "StackStruTest.java"
 - parents delegation model
 - PC register 线程私有（Processor register） 无内存溢出
 - 垃圾回收不涉及栈内存  因为Stack frame里面存储的数据 会随着里面的方法调用完而被回收，一般指的垃圾回收、优化等等 是针对堆内的数据而言 
+jps 查看当前系统有哪些java进程
+jconsole 图形界面的，多功能的检测工具，可以连续检测
