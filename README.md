@@ -103,3 +103,4 @@ SourceFile: "StackStruTest.java"
 - jvisualvm内存诊断工具
 - Java二进制字节码（包含类的基本信息，常量池，类方法定义包含了虚拟机指令）
 - Java instruction code   ldc=load constant : it loads an item from constant pool onto the stack
+- StringTable垃圾回收
