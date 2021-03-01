@@ -103,4 +103,9 @@ SourceFile: "StackStruTest.java"
 - jvisualvm内存诊断工具
 - Java二进制字节码（包含类的基本信息，常量池，类方法定义包含了虚拟机指令）
 - Java instruction code   ldc=load constant : it loads an item from constant pool onto the stack
-- StringTable垃圾回收
+- StringTable垃圾回收 性能调优 String.intern();
+- Direct Memory 不收JVM内存回收管理 分配回收成本高 但是读写性能高 常用于NIO操作用于数据缓冲区
+- Direct buffer:https://www.fusion-reactor.com/blog/evangelism/understanding-java-buffer-pool-memory-space/ 
+- -XX:+DisableExplicitGc 禁用显式的垃圾回收 System.gc();
+- 垃圾回收方法：引用计数法（弊端无法解析循环引用） 可达性分析算法 GCROOT  强引用 -> 软引用 -> 弱引用 -> 虚引用
+- 垃圾回收算法 ：标记清除算法（内存碎片问题） 标记整理（引用地址改变） 复制算法（From To 算法）
