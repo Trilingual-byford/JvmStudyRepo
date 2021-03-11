@@ -109,3 +109,14 @@ SourceFile: "StackStruTest.java"
 - -XX:+DisableExplicitGc 禁用显式的垃圾回收 System.gc();
 - 垃圾回收方法：引用计数法（弊端无法解析循环引用） 可达性分析算法 GCROOT  强引用 -> 软引用 -> 弱引用 -> 虚引用
 - 垃圾回收算法 ：标记清除算法（内存碎片问题） 标记整理（引用地址改变） 复制算法（From To 算法）
+- --XX:+UseSerialGC 串行（单线程垃圾回收 回收时阻塞其他线程）
+- --XX:+UseParallelGc 多线程垃圾回收 吞吐量优先 ParallelGcThreads=n 设置垃圾回收线程数
+- -XX:+UseConcMarkSweepGc --parallelGcThreads=n 
+- 确定目标
+- 低延迟（增加相应时间）  VS 高吞吐量（做各种科学计算）
+- 低延迟G1，CMS，ZGC（ZGC）
+- 高吞吐量 ParallelGC
+-  5.3 最快的GC是不发生GC
+-  1，数据是不是太多？ result=statement.executeQuery("Select * from table limit n")
+-  2，数据表示是不是太臃肿  多取了无用的数据/对象大小太大 Integer 24->int 4
+-  3,内存泄漏  软弱引用  使用第三方的缓存实现 Redisなど
